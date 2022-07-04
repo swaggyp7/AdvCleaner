@@ -1,0 +1,51 @@
+/*百度搜索 不能用display和visablility因为百度广告将这两个属性写入行内并带上important，无法覆盖*/
+div[prank] {
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+}
+
+/* 百度搜索侧边底部招商广告 */
+.ad-block {
+  display: none !important;
+}
+
+/*贴吧*/
+/* 贴吧内容广告 */
+div[class*="fengchao"] {
+  display: none;
+}
+
+/* 贴吧侧边广告 */
+#aside-ad {
+  display: none;
+}
+
+/* 百度知道底部广告 */
+div[class*="wgt-ads"] {
+  display: none;
+}
+
+/* 百度知道侧边广告 */
+.qbrightdown-ecom-ads {
+  display: none;
+}
+
+/* 企业推荐广告 */
+.wgt-ecom-related {
+  display: none;
+}
+
+/* 百度知道顶部banner广告 */
+.wgt-ecom-banner {
+  display: none;
+}
+
+/* 百度知道回答内容嵌入广告 */
+#knowledge-answer {
+  display: none;
+}
+
+.xcp-list {
+  display: none !important;
+}

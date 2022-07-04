@@ -1,0 +1,23 @@
+/* 禁用知乎登录弹窗 */
+div[data-za-detail-view-path-module_name="相关推荐"] {
+  display: none !important;
+}
+
+/* 盐选小说回答 */
+.KfeCollection-AnswerTopCard-Container ~ * {
+  display: none !important;
+}
+.KfeCollection-AnswerTopCard-Container::after {
+  content: "广告回答已屏蔽";
+  line-height: 2rem;
+  color: #999;
+}
+
+/* 首页侧边广告 */
+.Banner-adsense {
+  display: none !important;
+}
+
+.AdvertImg {
+  display: none !important;
+}
