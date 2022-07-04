@@ -1,0 +1,4 @@
+/* 屏蔽所有iframe广告 */
+iframe {
+  display: none !important;
+}

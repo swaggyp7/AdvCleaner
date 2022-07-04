@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "AdvCleaner",
+  "version": "1.0.0",
+  "description": "通过样式过滤国内各大网站广告的 Chrome 插件",
+  "icons": {
+    "16": "img/icon-64.png",
+    "48": "img/icon-64.png",
+    "128": "img/icon-96.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://blog.csdn.net/*"],
+      "css": ["style/csdn.css"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["https://*.baidu.com/*"],
+      "css": ["style/baidu.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.zhihu.com/*"],
+      "css": ["style/zhihu.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://juejin.cn/*"],
+      "css": ["style/juejin.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.jianshu.com/*"],
+      "css": ["style/jianshu.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "homepage_url": "https://github.com/swaggyp7/BaiduCleaner"
+}
