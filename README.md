@@ -1,6 +1,7 @@
 # AdvCleaner
 通过样式过滤国内各大网站广告的 Chrome 插件
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 ## Features
@@ -29,3 +30,5 @@
 
 4. 选择刚刚解压出来的文件夹即可安装
 >>>>>>> parent of 5ce742e (Revert "1")
+=======
+>>>>>>> parent of f6b046f (initialize)
